@@ -11,15 +11,15 @@ const Nav = () => {
           <div className="mt-5">
             <NavLink
               className="bg-black text-white p-3 mx-2 rounded-t-xl border "
-              to="/about"
-            >
-              <button className="w-20">About</button>
-            </NavLink>
-            <NavLink
-              className="bg-black text-white p-3 mx-2 rounded-t-xl border "
               to="/cocktails"
             >
               <button className="w-20">Cocktails</button>
+            </NavLink>
+            <NavLink
+              className="bg-black text-white p-3 mx-2 rounded-t-xl border "
+              to="/about"
+            >
+              <button className="w-20">About</button>
             </NavLink>
           </div>
         </div>
