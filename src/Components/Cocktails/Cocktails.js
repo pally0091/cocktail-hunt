@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
 const Cocktails = () => {
-    return (
-        <div>
-            Cocktails
-        </div>
-    );
+  return (
+    <div>
+      <h2>Here is Cocktails information in details</h2>
+    </div>
+  );
 };
 
 export default Cocktails;
