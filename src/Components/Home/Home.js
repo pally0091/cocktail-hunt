@@ -26,8 +26,9 @@ const Home = () => {
         </div>
       </div>
       <div className="lg:w-1/2 sm:w-[95%] min-[320px]:w-[95%] p-3">
+        <h2 className="text-3xl font-bold my-5">Welcome !!</h2>
         <div className="border-2 p-4 rounded-lg">
-          <h3 className="my-10 text-xl">Need to making some cocktails.. </h3>
+          <h3 className="my-10 text-xl">Want some cocktails & drinks ..? </h3>
           <Link
             className="bg-lime-200 p-3 rounded-lg hover:bg-lime-400 hover:shadow-md hover:shadow-black"
             to="/cocktails"
