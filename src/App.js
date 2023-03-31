@@ -9,24 +9,26 @@ import Main from './Components/Main';
 function App() {
   const router = createBrowserRouter([
     {
-      path: '/',
+      path: "/",
       element: <Main></Main>,
       children: [
         {
-          path: '/',
-          element:<Home></Home>
+          path: "/",
+          element: <Home></Home>,
+          loader: () =>
+            fetch("www.thecocktaildb.com/api/json/v1/1/random.php"),
         },
         {
-          path: '/about',
-          element:<About></About>
+          path: "/about",
+          element: <About></About>,
         },
         {
-          path: '/cocktails',
-          element: <Cocktails></Cocktails>
-        }
-      ]
-    }
-  ])
+          path: "/cocktails",
+          element: <Cocktails></Cocktails>,
+        },
+      ],
+    },
+  ]);
   return (
     <div className="App">
       <RouterProvider router={router}></RouterProvider>
