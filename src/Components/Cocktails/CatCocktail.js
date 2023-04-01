@@ -2,7 +2,7 @@ import React from "react";
 
 const CatCocktail = () => {
   return (
-    <div>
+    <div className="bg-yellow-200">
       <h2>Cocktail</h2>
     </div>
   );

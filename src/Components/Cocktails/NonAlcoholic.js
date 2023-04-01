@@ -2,7 +2,7 @@ import React from "react";
 
 const NonAlcoholic = () => {
   return (
-    <div>
+    <div className="bg-yellow-200">
       <h2>NonAlcoholic</h2>
     </div>
   );
