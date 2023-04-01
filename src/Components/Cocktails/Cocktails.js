@@ -1,9 +1,12 @@
 import React from "react";
+import CocktailNav from "./CocktailNav";
+import { Outlet } from "react-router-dom";
 
 const Cocktails = () => {
   return (
     <div>
-      <h2>Here is Cocktails information in details</h2>
+      <CocktailNav></CocktailNav>
+      <Outlet></Outlet>
     </div>
   );
 };
