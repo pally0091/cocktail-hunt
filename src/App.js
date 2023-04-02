@@ -31,22 +31,42 @@ function App() {
             {
               path: "/cocktails",
               element: <Drink></Drink>,
+              loader: () =>
+                fetch(
+                  "https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Ordinary_Drink"
+                ),
             },
             {
               path: "/cocktails/drink",
               element: <Drink></Drink>,
+              loader: () =>
+                fetch(
+                  "https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Ordinary_Drink"
+                ),
             },
             {
               path: "/cocktails/alcoholic",
               element: <Alcoholic></Alcoholic>,
+              loader: () =>
+                fetch(
+                  "www.thecocktaildb.com/api/json/v1/1/filter.php?a=Alcoholic"
+                ),
             },
             {
               path: "/cocktails/noalcoholic",
               element: <NonAlcoholic></NonAlcoholic>,
+              loader: () =>
+                fetch(
+                  "www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic"
+                ),
             },
             {
               path: "/cocktails/coktail",
               element: <CatCocktail></CatCocktail>,
+              loader: () =>
+                fetch(
+                  "www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail"
+                ),
             },
           ],
         },
