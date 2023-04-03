@@ -33,7 +33,7 @@ function App() {
               element: <Drink></Drink>,
               loader: () =>
                 fetch(
-                  "https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Ordinary_Drink"
+                  "https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Gin"
                 ),
             },
             {

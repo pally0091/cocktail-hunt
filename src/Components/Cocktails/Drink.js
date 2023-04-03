@@ -10,7 +10,7 @@ const Drink = () => {
   return (
     <div>
       <p>There are {drinks.length} drinks found</p>
-      <div className="bg-yellow-200 grid lg:grid-cols-3 sm:grid-cols-1 min-[320px]:srid-cols-1 gap-2 w-[96%] mx-auto p-2">
+      <div className="bg-yellow-200 grid lg:grid-cols-4 sm:grid-cols-1 min-[320px]:srid-cols-1 gap-2 w-[96%] mx-auto p-2">
         {drinks.map((drink) => (
           <DrinkCard
             key={drink.idDrink}
